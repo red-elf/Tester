@@ -18,3 +18,10 @@ file(
         "*.cpp"
 )
 add_library(Tester ${LIB_SRC})
+
+# Install library
+install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
+
+# Install library headers
+file(GLOB HEADERS *.h)
+install(FILES ${HEADERS} DESTINATION include/${PROJECT_NAME})
