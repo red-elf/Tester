@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(Example)
+project(Tests)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -24,4 +24,4 @@ file(
         "*.cpp"
 )
 
-add_executable(Example ${APP_SRC})
+add_executable(Tests ${APP_SRC})

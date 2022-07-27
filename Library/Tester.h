@@ -5,13 +5,13 @@
 #include <string>
 
 #include "TestRunner.h"
-#include "TesterConfig.h"
+#include "BuildConfig.h"
 
 namespace TestingLibrary::Info {
 
     static const std::string getVersion() {
-        std::string majorVersion = std::to_string(VERSION_MAJOR);
-        std::string minorVersion = std::to_string(VERSION_MINOR);
+        std::string majorVersion = std::to_string(VERSIONABLE_VERSION_PRIMARY);
+        std::string minorVersion = std::to_string(VERSIONABLE_VERSION_SECONDARY);
         return majorVersion + "." + minorVersion;
     }
 }
