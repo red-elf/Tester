@@ -10,8 +10,8 @@
 namespace TestingLibrary::Info {
 
     static const std::string getVersion() {
-        std::string majorVersion = std::to_string(TESTER_VERSION_MAJOR);
-        std::string minorVersion = std::to_string(TESTER_VERSION_MINOR);
+        std::string majorVersion = std::to_string(VERSION_MAJOR);
+        std::string minorVersion = std::to_string(VERSION_MINOR);
         return majorVersion + "." + minorVersion;
     }
 }
