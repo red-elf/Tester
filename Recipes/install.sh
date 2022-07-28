@@ -8,6 +8,6 @@ echo "Installing the 'Tester' micro-framework, please wait" && \
   source ../../Version/version.sh && cmake -DVERSIONABLE_VERSION_PRIMARY="$VERSIONABLE_VERSION_PRIMARY" \
   -DVERSIONABLE_VERSION_SECONDARY="$VERSIONABLE_VERSION_SECONDARY" -DVERSIONABLE_NAME="$VERSIONABLE_NAME" \
   -DVERSIONABLE_VERSION_PATCH="$VERSIONABLE_VERSION_PATCH" .. && \
-  make && \
+  make -j "$(nproc)" && \
   sudo make install && \
   echo "The 'Tester' micro-framework has been installed with success"
