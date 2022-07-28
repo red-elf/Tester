@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.22)
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/../Versionable/CMake/CMakeLists.txt)
 
-project(Tester)
+project(${VERSIONABLE_NAME})
 
 file(
         GLOB LIB_SRC
         "*.h"
         "*.cpp"
 )
-add_library(Tester ${LIB_SRC})
+add_library(${PROJECT_NAME} ${LIB_SRC})
 
 # Install library
 install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
