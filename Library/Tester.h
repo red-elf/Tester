@@ -12,7 +12,8 @@ namespace TestingLibrary::Info {
     static const std::string getVersion() {
         std::string majorVersion = std::to_string(VERSIONABLE_VERSION_PRIMARY);
         std::string minorVersion = std::to_string(VERSIONABLE_VERSION_SECONDARY);
-        return majorVersion + "." + minorVersion;
+        std::string patchVersion = std::to_string(VERSIONABLE_VERSION_PATCH);
+        return majorVersion + "." + minorVersion + "." + patchVersion;
     }
 }
 
